@@ -4,56 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio d'Anders Emmanuel MOUNTOU - Développeur Web en BTS SIO">
+    <meta name="keywords" content="portfolio, développeur web, BTS SIO, projets web">
     <meta name="author" content="Anders Emmanuel MOUNTOU">
     <title>Portfolio - Anders Emmanuel MOUNTOU</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- En-tête -->
     <header class="main-header">
-        <div class="logo">
-            <h1>PORTFOLIO</h1>
+        <div class="container">
+            <div class="logo">
+                <h1>PORTFOLIO</h1>
+            </div>
+            <nav class="main-nav" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="#accueil" aria-current="page">Accueil</a></li>
+                    <li><a href="#parcours">Parcours</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="main-nav" aria-label="Navigation principale">
-            <ul>
-                <li><a href="#accueil" aria-current="page">Accueil</a></li>
-                <li><a href="#parcours">Parcours</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
         <!-- Section Accueil -->
-        <figure id="accueil" class="hero-section">
-          
+        <section id="accueil" class="hero-section">
+            <div class="container">
                 <h2>Présentation</h2>
-                
-                    <img src="profile-photo.jpg" alt="Photo de Anders Emmanuel MOUNTOU" class="profile-photo">
-                    <figcaption>
-                        <p>
-                            Je m'appelle Anders Emmanuel MOUNTOU, je suis un étudiant en BTS SIO 1. 
-                            Native de Brazzaville, j'ai obtenu mon BAC de sciences naturelles en 2021 
-                            puis j'ai poursuivi en études en Licences pendant 3 ans. En septembre 2024, 
-                            j'atterris sur le territoire français pour la poursuite de mes études professionnelles.
-                        </p>
-                        <p>
-                            Pendant ces années d'études, j'ai travaillé sur plusieurs projets qui sont disponibles 
-                            dans la section <a href="#projets">PROJETS</a> et vous pouvez aussi découvrir 
-                            mon parcours dans la section <a href="#parcours">PARCOURS</a>.
-                        </p>
-                    </figcaption>
-                
-            
-        </figure>
+                <div class="hero-content">
+                    <figure class="profile-figure">
+                        <img src="profile-photo.jpg" alt="Photo de Anders Emmanuel MOUNTOU" class="profile-photo">
+                        <figcaption>
+                            <p>
+                                Je m'appelle Anders Emmanuel MOUNTOU, je suis un étudiant en BTS SIO 1. 
+                                Native de Brazzaville, j'ai obtenu mon BAC de sciences naturelles en 2021 
+                                puis j'ai poursuivi en études en Licences pendant 3 ans. En septembre 2024, 
+                                j'atterris sur le territoire français pour la poursuite de mes études professionnelles.
+                            </p>
+                            <p>
+                                Pendant ces années d'études, j'ai travaillé sur plusieurs projets qui sont disponibles 
+                                dans la section <a href="#projets">PROJETS</a> et vous pouvez aussi découvrir 
+                                mon parcours dans la section <a href="#parcours">PARCOURS</a>.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Parcours -->
+        <section id="parcours" class="timeline-section">
+            <div class="container">
+                <h2>Mon Parcours</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h3>BTS SIO</h3>
+                            <p>Début de ma formation en BTS Services Informatiques aux Organisations en France</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021-2024</div>
+                        <div class="timeline-content">
+                            <h3>Licence en Informatique</h3>
+                            <p>Formation en développement web et programmation à Brazzaville</p>
+                            <ul>
+                                <li>Développement d'applications web</li>
+                                <li>Programmation orientée objet</li>
+                                <li>Bases de données</li>
+                                <li>Projets pratiques en équipe</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021</div>
+                        <div class="timeline-content">
+                            <h3>Baccalauréat en Sciences Naturelles</h3>
+                            <p>Obtention du BAC avec mention</p>
+                            <ul>
+                                <li>Spécialisation en sciences naturelles</li>
+                                <li>Projets scientifiques</li>
+                                <li>Stage en laboratoire</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2020</div>
+                        <div class="timeline-content">
+                            <h3>Premiers pas en programmation</h3>
+                            <p>Découverte et apprentissage des bases de la programmation</p>
+                            <ul>
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Section Compétences -->
         <section id="competences" class="skills-section">
-         
+            <div class="container">
                 <h2>Mes Compétences</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
@@ -88,8 +150,8 @@
                             <li>Adobe XD</li>
                         </ul>
                     </div>
-                
-            
+                </div>
+            </div>
         </section>
 
         <!-- Section Projets -->
