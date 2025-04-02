@@ -16,11 +16,12 @@
     <header class="main-header">
         <div class="container">
             <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
                 <h1>PORTFOLIO</h1>
             </div>
             <nav class="main-nav" aria-label="Navigation principale">
                 <ul>
-                    <li><a href="#accueil" aria-current="page">Accueil</a></li>
+                    <li><a href="#accueil" class="active">Accueil</a></li>
                     <li><a href="#parcours">Parcours</a></li>
                     <li><a href="#competences">Compétences</a></li>
                     <li><a href="#projets">Projets</a></li>
@@ -37,119 +38,113 @@
             <div class="container">
                 <h2>Présentation</h2>
                 <div class="hero-content">
-                    <figure class="profile-figure">
-                        <img src="profile-photo.jpg" alt="Photo de Anders Emmanuel MOUNTOU" class="profile-photo">
-                        <figcaption>
-                            <p>
-                                Je m'appelle Anders Emmanuel MOUNTOU, je suis un étudiant en BTS SIO 1. 
-                                Native de Brazzaville, j'ai obtenu mon BAC de sciences naturelles en 2021 
-                                puis j'ai poursuivi en études en Licences pendant 3 ans. En septembre 2024, 
-                                j'atterris sur le territoire français pour la poursuite de mes études professionnelles.
-                            </p>
-                            <p>
-                                Pendant ces années d'études, j'ai travaillé sur plusieurs projets qui sont disponibles 
-                                dans la section <a href="#projets">PROJETS</a> et vous pouvez aussi découvrir 
-                                mon parcours dans la section <a href="#parcours">PARCOURS</a>.
-                            </p>
-                        </figcaption>
-                    </figure>
+                    <div class="hero-text">
+                        <p>
+                            Je m'appelle Anders Emmanuel MOUNTOU, je suis un étudiant en BTS SIO 1. 
+                            Natif de Brazzaville, j'ai obtenu mon BAC de sciences naturelles en 2021 
+                            puis j'ai poursuivi en études en Licences pendant 3 ans. En septembre 2024, 
+                            j'atterris sur le territoire français pour la poursuite de mes études professionnelles.
+                        </p>
+                        <p>
+                            Pendant ces années d'études, j'ai travaillé sur plusieurs projets qui sont disponibles 
+                            dans la section <a href="#projets">PROJETS</a> et vous pouvez aussi découvrir 
+                            mon parcours dans la section <a href="#parcours">PARCOURS</a>.
+                        </p>
+                    </div>
+                    <div class="hero-image">
+                        <img src="asset/image 2.jpg" alt="Photo de Anders Emmanuel MOUNTOU">
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Section Parcours -->
-        <section id="parcours" class="timeline-section">
+        <section id="parcours" class="projects-section">
             <div class="container">
                 <h2>Mon Parcours</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">2024</div>
-                        <div class="timeline-content">
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-content">
                             <h3>BTS SIO</h3>
-                            <p>Début de ma formation en BTS Services Informatiques aux Organisations en France</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-date">2021-2024</div>
-                        <div class="timeline-content">
-                            <h3>Licence en Informatique</h3>
-                            <p>Formation en développement web et programmation à Brazzaville</p>
+                            <p>2024</p>
                             <ul>
-                                <li>Développement d'applications web</li>
-                                <li>Programmation orientée objet</li>
-                                <li>Bases de données</li>
-                                <li>Projets pratiques en équipe</li>
+                                <li>Formation en Services Informatiques aux Organisations</li>
+                                <li>Spécialisation en développement web</li>
+                                <li>Projets professionnels en entreprise</li>
                             </ul>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="timeline-item">
-                        <div class="timeline-date">2021</div>
-                        <div class="timeline-content">
-                            <h3>Baccalauréat en Sciences Naturelles</h3>
-                            <p>Obtention du BAC avec mention</p>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Licence en Informatique</h3>
+                            <p>2021-2024</p>
                             <ul>
+                                <li>Formation en développement web et programmation</li>
+                                <li>Projets pratiques en équipe</li>
+                                <li>Bases de données et POO</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Baccalauréat en Sciences Naturelles</h3>
+                            <p>2021</p>
+                            <ul>
+                                <li>Obtention du BAC avec mention</li>
                                 <li>Spécialisation en sciences naturelles</li>
                                 <li>Projets scientifiques</li>
-                                <li>Stage en laboratoire</li>
                             </ul>
                         </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-date">2020</div>
-                        <div class="timeline-content">
-                            <h3>Premiers pas en programmation</h3>
-                            <p>Découverte et apprentissage des bases de la programmation</p>
-                            <ul>
-                                <li>HTML/CSS</li>
-                                <li>JavaScript</li>
-                                <li>Python</li>
-                            </ul>
-                        </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Section Compétences -->
-        <section id="competences" class="skills-section">
+        <section id="competences" class="projects-section">
             <div class="container">
                 <h2>Mes Compétences</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Frontend</h3>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>Vue.js</li>
-                        </ul>
-                    </div>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Frontend</h3>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Vue.js</li>
+                            </ul>
+                        </div>
+                    </article>
 
-                    <div class="skill-category">
-                        <h3>Backend</h3>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Python</li>
-                            <li>PHP</li>
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Backend</h3>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Python</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </div>
+                    </article>
 
-                    <div class="skill-category">
-                        <h3>Outils</h3>
-                        <ul>
-                            <li>Git</li>
-                            <li>Docker</li>
-                            <li>VS Code</li>
-                            <li>Figma</li>
-                            <li>Adobe XD</li>
-                        </ul>
-                    </div>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Outils</h3>
+                            <ul>
+                                <li>Git</li>
+                                <li>Docker</li>
+                                <li>VS Code</li>
+                                <li>Figma</li>
+                                <li>Adobe XD</li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -160,52 +155,52 @@
                 <h2>Mes Projets</h2>
                 <div class="projects-grid">
                     <article class="project-card">
-                        <h3>Générateur de Citations Inspirantes</h3>
                         <div class="project-content">
-                            <img src="asset/4136918.jpg" alt="Aperçu du projet Générateur de Citations" width="300" height="200">
+                            <img src="asset/4136918.jpg" alt="Aperçu du projet Générateur de Citations">
+                            <h3>Générateur de Citations Inspirantes</h3>
                             <ul>
-                                <li>Application web affichant aléatoirement des citations inspirantes.</li>
-                                <li>Possibilité de partager sur les réseaux sociaux.</li>
-                                <li>Option d'enregistrement des citations préférées.</li>
-                                <li>Technologies : HTML, CSS, JavaScript (React/Vue), API externe.</li>
+                                <li>Application web affichant aléatoirement des citations inspirantes</li>
+                                <li>Possibilité de partager sur les réseaux sociaux</li>
+                                <li>Option d'enregistrement des citations préférées</li>
+                                <li>Technologies : HTML, CSS, JavaScript (React/Vue), API externe</li>
                             </ul>
                             <div class="project-links">
                                 <a href="#" class="btn">Voir le projet</a>
-                                <a href="#" class="btn">Code source</a>
+                                <a href="#" class="btn btn-outline">Code source</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card">
-                        <h3>To-Do List Interactive</h3>
                         <div class="project-content">
-                            <img src="asset/7081473.jpg" alt="Aperçu du projet To-Do List" width="300" height="200">
+                            <img src="asset/7081473.jpg" alt="Aperçu du projet To-Do List">
+                            <h3>To-Do List Interactive</h3>
                             <ul>
-                                <li>Création, modification et suppression de tâches avec catégories et priorités.</li>
-                                <li>Stockage local via LocalStorage ou Firebase.</li>
-                                <li>Design moderne et responsive avec animations.</li>
-                                <li>Technologies : React/Vue, TailwindCSS, Firebase ou IndexedDB.</li>
+                                <li>Création, modification et suppression de tâches avec catégories</li>
+                                <li>Stockage local via LocalStorage ou Firebase</li>
+                                <li>Design moderne et responsive avec animations</li>
+                                <li>Technologies : React/Vue, TailwindCSS, Firebase</li>
                             </ul>
                             <div class="project-links">
                                 <a href="#" class="btn">Voir le projet</a>
-                                <a href="#" class="btn">Code source</a>
+                                <a href="#" class="btn btn-outline">Code source</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card">
-                        <h3>Portfolio Interactif avec Mode Sombre</h3>
                         <div class="project-content">
-                            <img src="asset/illustration.avif" alt="Aperçu du projet Portfolio" width="300" height="200">
+                            <img src="asset/illustration.avif" alt="Aperçu du projet Portfolio">
+                            <h3>Portfolio Interactif avec Mode Sombre</h3>
                             <ul>
-                                <li>Site web personnel avec navigation fluide et design épuré.</li>
-                                <li>Possibilité d'activer un mode sombre ou clair.</li>
-                                <li>Formulaire de contact dynamique intégré.</li>
-                                <li>Technologies : Next.js/Astro, TailwindCSS, Formspree/Nodemailer.</li>
+                                <li>Site web personnel avec navigation fluide et design épuré</li>
+                                <li>Possibilité d'activer un mode sombre ou clair</li>
+                                <li>Formulaire de contact dynamique intégré</li>
+                                <li>Technologies : Next.js, TailwindCSS, Formspree</li>
                             </ul>
                             <div class="project-links">
                                 <a href="#" class="btn">Voir le projet</a>
-                                <a href="#" class="btn">Code source</a>
+                                <a href="#" class="btn btn-outline">Code source</a>
                             </div>
                         </div>
                     </article>
@@ -243,22 +238,31 @@
                 <h2>Contactez-moi</h2>
                 <div class="contact-grid">
                     <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> Email : <a href="mailto:andersemmanuel93@gmail.com">andersemmanuel93@gmail.com</a></p>
-                        <p><i class="fas fa-phone"></i> Téléphone : <a href="tel:+33766620889">0766620889</a></p>
-                        <p><i class="fas fa-map-marker-alt"></i> Localisation : France</p>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:andersemmanuel93@gmail.com">andersemmanuel93@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+33766620889">0766620889</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>France</span>
+                        </div>
                     </div>
-                    <form class="contact-form" action="#" method="POST">
+                    <form class="contact-form">
                         <div class="form-group">
-                            <label for="name">Nom</label>
                             <input type="text" id="name" name="name" required>
+                            <label for="name">Nom</label>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
                             <textarea id="message" name="message" required></textarea>
+                            <label for="message">Message</label>
                         </div>
                         <button type="submit" class="btn">Envoyer</button>
                     </form>
@@ -272,12 +276,12 @@
             <div class="footer-content">
                 <div class="social-links">
                     <h3>Suivez-moi</h3>
-                    <ul>
-                        <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
                 <p class="copyright">&copy; 2024 Anders Emmanuel MOUNTOU. Tous droits réservés.</p>
             </div>
