@@ -26,7 +26,7 @@ Découvrez mon portfolio, une vitrine interactive de mes réalisations en dével
 git clone https://github.com/andersemmanuel/Portfolio.git
 ```
 
-2. 🌐 Ouvrez `index.html` dans votre navigateur.
+2. 🔗 Visitez le site en ligne : [Portfolio](https://andersemmanuel.github.io/Portfolio/)
 
 ## 📧 Contact
 
