@@ -103,25 +103,25 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Gestion de la navigation active
+
 document.addEventListener('DOMContentLoaded', () => {
-    // Sélectionner tous les liens de navigation
+    
     const navLinks = document.querySelectorAll('.main-nav a');
     
-    // Fonction pour mettre à jour le lien actif
+    
     const updateActiveLink = () => {
         const scrollPosition = window.scrollY + 100;
         
-        // Parcourir toutes les sections
+        
         document.querySelectorAll('section[id]').forEach(section => {
             const sectionTop = section.offsetTop - 100;
             const sectionHeight = section.offsetHeight;
             
             if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                // Retirer la classe active de tous les liens
+                
                 navLinks.forEach(link => link.classList.remove('active'));
                 
-                // Ajouter la classe active au lien correspondant
+                
                 const activeLink = document.querySelector(`.main-nav a[href="#${section.id}"]`);
                 if (activeLink) {
                     activeLink.classList.add('active');
@@ -130,12 +130,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Écouter le défilement de la page
+    
     window.addEventListener('scroll', updateActiveLink);
-    // Mettre à jour le lien actif au chargement de la page
+    
     updateActiveLink();
 
-    // Animation des cartes de projet au défilement
+    
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Observer les cartes de projet
+    
     document.querySelectorAll('.project-card').forEach(card => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(20px)';
@@ -158,28 +158,28 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
-    // Gestion du formulaire de contact
+    
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
             
-            // Récupérer les valeurs du formulaire
+            
             const formData = new FormData(contactForm);
             const formObject = Object.fromEntries(formData);
             
-            // Simuler l'envoi du formulaire
+            
             console.log('Données du formulaire:', formObject);
             
-            // Afficher un message de succès
+        
             alert('Votre message a été envoyé avec succès !');
             
-            // Réinitialiser le formulaire
+            
             contactForm.reset();
         });
     }
 
-    // Smooth scroll pour les liens d'ancrage
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Gestion du menu mobile
+    
     const header = document.querySelector('.main-header');
     let lastScroll = 0;
 
@@ -206,11 +206,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         if (currentScroll > lastScroll && !header.classList.contains('scroll-down')) {
-            // Scroll Down
+            
             header.classList.remove('scroll-up');
             header.classList.add('scroll-down');
         } else if (currentScroll < lastScroll && header.classList.contains('scroll-down')) {
-            // Scroll Up
+            
             header.classList.remove('scroll-down');
             header.classList.add('scroll-up');
         }

@@ -453,7 +453,7 @@ main {
     }
 }
 
-/* Hero Section */
+
 .hero-section {
     background-color: var(--background-color);
     padding: var(--spacing-xl) 0;
@@ -529,7 +529,7 @@ main {
     }
 }
 
-/* Section Certifications */
+
 .certifications-section {
     background-color: var(--background-color);
     padding: var(--spacing-lg) 0;
